@@ -1,4 +1,4 @@
-.page {
+#random {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +12,15 @@
     justify-content: center;
     align-items: center;
 }
-.random img {
-    max-width: 70vw;
-    max-height: 70vh;
+#random img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+}
+#random img:not(:first-child) {
+    display:none;
 }
