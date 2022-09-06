@@ -8,7 +8,7 @@ $tag = (string)filter_input(INPUT_POST, 'tag');
 $url = (string)filter_input(INPUT_POST, 'url');
 $link = (string)filter_input(INPUT_POST, 'link');
 
-$fp = fopen('list.csv', 'a+b');
+$fp = fopen('org.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $contents, $tag, $url, $link,]);
@@ -27,15 +27,13 @@ fclose($fp);
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>Web Template | vg.pe.hu</title>
   
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ウェブサイトvg.pe.hu のために制作したコードをまとめたウェブ・テンプレート">
 
-<link rel="stylesheet" type="text/css" href="../css/greating.css"/>
-<link rel="stylesheet" type="text/css" href="../css/list.css"/>
+<link rel="stylesheet" type="text/css" href="css/greating.css"/>
+<link rel="stylesheet" type="text/css" href="css/list.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="org.js"></script>
 </head>
@@ -86,8 +84,8 @@ fclose($fp);
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#menu").load("../menu/");
-$("#cv_link").load("../cv/link.html");
+$("#menu").load("menu.html");
+$("#cv_link").load("cv/link.html");
 })
 </script>
 </body>
