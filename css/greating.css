@@ -1,4 +1,4 @@
-#greating {
+#cv {
   position: relative;
   z-index: 10;
   padding:0 2.5%;
@@ -7,25 +7,25 @@
   overflow-y:auto;
   overflow-x:hidden;
 }
-#greating::-webkit-scrollbar{
+#cv::-webkit-scrollbar{
   width:2rem;
 }
-#greating::-webkit-scrollbar-track{
+#cv::-webkit-scrollbar-track{
   border-radius: 2rem;
   border:2px solid;
 }
-#greating::-webkit-scrollbar-thumb{
+#cv::-webkit-scrollbar-thumb{
   background:#000;
   border-radius: 2rem;
 }
 
-#cv {
+#greating {
   font-size:1.5rem;
   padding:0;
   letter-spacing:0.05rem;
   font-family: sans-serif;
 }
-#cv a {
+#greating a {
   color:#000;
   font-family: serif;
   font-style: italic;
@@ -36,14 +36,14 @@
   -webkit-filter: blur(1.25vw);
   transition: all 1500ms ease;
 }
-#cv a:hover {
+#greating a:hover {
   cursor:pointer;
   filter: blur(0);
   -webkit-filter: blur(0);
   transform: scale(1.5,1.5);
   transition: all 1000ms ease;
 }
-#cv .note {
+#greating .note {
   font-size:75%;
   line-height:150%;
   font-style:italic;
