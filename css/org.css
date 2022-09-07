@@ -31,6 +31,12 @@ hr {
   transition: .5s all;
 }
 
+#org,
+.list {
+  width: 95%;
+  margin: auto;
+}
+
 #org {
   position: relative;
   top: 0;
