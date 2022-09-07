@@ -33,13 +33,15 @@ hr {
 
 #org,
 .list {
+  width: 95%;
+  margin: auto;
 }
 
 #org {
   position: relative;
   top: 0;
   z-index: 2;
-  padding: 2.5% 2.5% 0;
+  padding: 2.5rem 2.5% 0;
 }
 
 #org ul {
