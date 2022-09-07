@@ -11,26 +11,6 @@
   font-family: sans-serif;
 }
 
-#greating a {
-  color: #000;
-  font-family: serif;
-  font-style: italic;
-  display: inline-block;
-  padding: 1%;
-  text-decoration: none;
-  filter: blur(1.25vw);
-  -webkit-filter: blur(1.25vw);
-  transition: all 1500ms ease;
-}
-
-#greating a:hover {
-  cursor: pointer;
-  filter: blur(0);
-  -webkit-filter: blur(0);
-  transform: scale(1.5, 1.5);
-  transition: all 1000ms ease;
-}
-
 #greating .note {
   font-size: 75%;
   line-height: 150%;
