@@ -33,9 +33,6 @@ hr {
 
 #org,
 .list {
-  margin: 2.5rem 0;
-  width: 95%;
-  margin: auto;
 }
 
 #org {
@@ -43,7 +40,6 @@ hr {
   top: 0;
   z-index: 2;
   padding: 2.5% 2.5% 0;
-  margin-bottom: -2.5rem;
 }
 
 #org ul {
