@@ -96,7 +96,7 @@ button:hover {
 
 .list {
   position: relative;
-  padding: 2.5rem 0;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column-reverse;
 }
