@@ -42,7 +42,7 @@ fclose($fp);
 <body>
     <div id="menu"></div>
 
-    <div id="greating">
+    <div id="cv">
         <form id="org">
             <div class="search-box tag">
                 <ul>
