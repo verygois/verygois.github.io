@@ -18,16 +18,83 @@
 <body>
     <div id="menu"></div>
     <div id="readme">
-        <div id="cv"></div>
+        <div id="cv">
+            <p><u>HTML</u></p>
+            <p>
+                <a href="index.html">index.html</a>
+                トップページを構成するHTML
+            </p>
+            <p>
+                <a href="menu.html">menu.html</a>
+                別ページへのリンクを記述するHTML
+            </p>
+            <p>
+                <a href="readme.html">readme.html</a>
+                ページの説明文・別サイトへのリンクを記述するHTML
+            </p>
+            <p>
+                <a href="img.html">img.html</a>
+                横スクロール写真一覧ページの基となるHTML
+            </p>
+            <hr />
+            <p><u>PHP/CSV</u></p>
+            <p>
+                <a href="org.php">org.php</a>
+                絞り込み機能付きリストページの基となるPHP
+            </p>
+            <p>
+                <a href="org.csv">org.csv</a>
+                <i>org.php</i> に表示する項目を記述する
+            </p>
+            <hr />
+            <p><u>CSS</u></p>
+            <p>
+                <a href="css/readme.css">css/readme.css</a>
+                <i>index.html</i> <i>readme.html</i> <i>org.php</i> をスタイリングする
+            </p>
+            <p>
+                <a href="css/random.css">css/random.css</a>
+                <i>index.html</i> の背景に表示する画像をスタイリングする
+            </p>
+            <p>
+                <a href="css/menu.css">css/menu.css</a>
+                <i>menu.html</i> をスタイリングする
+            </p>
+            <p>
+                <a href="css/org.css">css/org.css</a>
+                <i>org.php</i> をスタイリングする
+            </p>
+            <p>
+                <a href="css/img.css">css/img.css</a>
+                <i>img.html</i> をスタイリングする
+            </p>
+            <hr />
+            <p><u>JavaScript</u></p>
+            <p>
+                <a href="ityped.js">ityped.js</a>
+                <i>index.html</i> を表示する挨拶文を記述する
+            </p>
+            <p>
+                <a href="img.js">img.js</a>
+                <i>index.html</i> <i>img.html</i> に表示する画像を記述する
+            </p>
+            <p>
+                <a href="org.js">org.js</a>
+                <i>org.php</i> を動作する
+            </p>
+            <hr />
+            <br/>
+            <h1>
+                <b>Download</b>
+                <a href="https://github.com/verygois/verygois.github.io/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </h1>
+        </div>
     </div>
-    <div id="link"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(function () {
             $("#menu").load("menu.html");
-            $("#cv").load("cv/index.html");
-            $("#link").load("cv/link.html");
         })
     </script>
 </body>

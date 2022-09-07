@@ -6,9 +6,36 @@
 
 #cv {
   font-size: 1rem;
-  padding: 0;
+  line-height: 200%;
   letter-spacing: 0.05rem;
-  font-family: sans-serif;
+}
+
+#cv h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#cv a {
+  display:inline-block;
+  color:#fff;
+  background:blue;
+  text-decoration:none;
+  padding: 0.05rem 0.25rem;
+  margin-right: 0.25rem;
+}
+
+#cv b {
+  display:inline-block;
+  font-weight: 500;
+  margin-right: 0.25rem;
+}
+
+#cv u {
+  font-size: 125%;
+}
+
+#cv hr {
+  border:none;
 }
 
 #greating .note {
@@ -42,30 +69,4 @@
   font-weight: 500;
   padding: 0.5rem;
   margin-right: 1rem;
-}
-
-@keyframes blurin {
-  0% {
-    filter: blur(1.25vw);
-    transform: scale(1, 1);
-    background-color: rgba(255, 255, 255, 0);
-  }
-
-  100% {
-    filter: blur(0);
-    transform: scale(1.5, 1.5);
-    background-color: rgba(255, 255, 255, 0.75);
-  }
-}
-
-@keyframes blurout {
-  0% {
-    filter: blur(0);
-    transform: scale(1.5, 1.5);
-  }
-
-  100% {
-    filter: blur(1.25vw);
-    transform: scale(1, 1);
-  }
 }

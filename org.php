@@ -1,5 +1,6 @@
 <?php
-function h($str) {
+function h($str)
+{
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 $title = (string)filter_input(INPUT_POST, 'title');
@@ -26,67 +27,68 @@ fclose($fp);
 
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" href="css/greating.css"/>
-<link rel="stylesheet" type="text/css" href="css/list.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="org.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/greating.css" />
+    <link rel="stylesheet" type="text/css" href="css/org.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="org.js"></script>
 </head>
 
 <body>
-<div id="menu"></div>
+    <div id="menu"></div>
 
-<div id="greating">
-<form id="org">
-<div class="search-box tag">
-<ul>
-<li>
-<input type="radio" name="tag" value="html" id="html">
-<label for="html" class="label">HTML</label></li>
-<li>
-<input type="radio" name="tag" value="css" id="css">
-<label for="css" class="label">CSS</label></li>
-<li>
-<input type="radio" name="tag" value="etc" id="etc">
-<label for="etc" class="label">ETC</label></li>
-</ul>
-</div>
-<div class="reset">
-<input type="reset" name="reset" value="View All" class="reset-button">
-</div>
-</form>
+    <div id="greating">
+        <form id="org">
+            <div class="search-box tag">
+                <ul>
+                    <li>
+                        <input type="radio" name="tag" value="html" id="html">
+                        <label for="html" class="label">HTML</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="tag" value="css" id="css">
+                        <label for="css" class="label">CSS</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="tag" value="etc" id="etc">
+                        <label for="etc" class="label">ETC</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="reset">
+                <input type="reset" name="reset" value="View All" class="reset-button">
+            </div>
+        </form>
 
-<ul class="list">
-<?php if (!empty($rows)): ?>
-<?php foreach ($rows as $row): ?>
-<li class="list_item list_toggle" data-tag="<?=h($row[2])?>">
-<span><?=h($row[0])?></span>
-<p><?=h($row[1])?></p>
-<a style="display:<?=h($row[4])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
-</li>
-<?php endforeach; ?>
-<?php else: ?>
-<li class="list_item list_toggle" data-tag="html">
-<span>Title</span>
-<p>contents</p>
-</li>
-<?php endif; ?>
-</ul>
-</div>
+        <ul class="list">
+            <?php if (!empty($rows)) : ?>
+                <?php foreach ($rows as $row) : ?>
+                    <li class="list_item list_toggle" data-tag="<?= h($row[2]) ?>">
+                        <span><?= h($row[0]) ?></span>
+                        <p><?= h($row[1]) ?></p>
+                        <a style="display:<?= h($row[4]) ?>;" href="<?= h($row[3]) ?>" target="_blank" rel="noopener noreferrer"></a>
+                    </li>
+                <?php endforeach; ?>
+            <?php else : ?>
+                <li class="list_item list_toggle" data-tag="html">
+                    <span>Title</span>
+                    <p>contents</p>
+                </li>
+            <?php endif; ?>
+        </ul>
+    </div>
 
-<div id="cv_link"></div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-$("#menu").load("menu.html");
-$("#cv_link").load("cv/link.html");
-})
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#menu").load("menu.html");
+        })
+    </script>
 </body>
+
 </html>

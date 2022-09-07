@@ -1,12 +1,12 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: "Arial Narrow", "YuGothic", monospace;
 }
 
 .tab {
     padding: 1rem 2.5%;
     font-size: 1rem;
-    font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 .tab,
