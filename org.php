@@ -7,12 +7,11 @@ $title = (string)filter_input(INPUT_POST, 'title');
 $contents = (string)filter_input(INPUT_POST, 'contents');
 $tag = (string)filter_input(INPUT_POST, 'tag');
 $url = (string)filter_input(INPUT_POST, 'url');
-$link = (string)filter_input(INPUT_POST, 'link');
 
 $fp = fopen('org.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$title, $contents, $tag, $url, $link,]);
+    fputcsv($fp, [$title, $contents, $tag, $url,]);
     rewind($fp);
 }
 
@@ -51,12 +50,16 @@ fclose($fp);
                         <label for="html" class="label">HTML</label>
                     </li>
                     <li>
+                        <input type="radio" name="tag" value="php" id="php">
+                        <label for="php" class="label">PHP</label>
+                    </li>
+                    <li>
                         <input type="radio" name="tag" value="css" id="css">
                         <label for="css" class="label">CSS</label>
                     </li>
                     <li>
-                        <input type="radio" name="tag" value="etc" id="etc">
-                        <label for="etc" class="label">ETC</label>
+                        <input type="radio" name="tag" value="js" id="js">
+                        <label for="js" class="label">JavaScript</label>
                     </li>
                 </ul>
             </div>
@@ -71,7 +74,7 @@ fclose($fp);
                     <li class="list_item list_toggle" data-tag="<?= h($row[2]) ?>">
                         <span><?= h($row[0]) ?></span>
                         <p><?= h($row[1]) ?></p>
-                        <a style="display:<?= h($row[4]) ?>;" href="<?= h($row[3]) ?>" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="<?= h($row[3]) ?>" target="_blank" rel="noopener noreferrer"></a>
                     </li>
                 <?php endforeach; ?>
             <?php else : ?>
