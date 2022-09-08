@@ -1,7 +1,7 @@
 ityped.init(document.querySelector("#ityped"), {
     strings: [
         'ityped.js を編集し、ここに表示するテキストを記述',
-        'ityped.js を編集し、ここに表示するテキストを記述'
+        'iTyped.js は、Luis Viniciusが制作したオープンソースコードです。'
     ],
     startDelay: 100, //アニメーション開始までの遅延、大きいほど遅れる
     typeSpeed: 100, //表示させるスピード、大きいほどゆっくり
