@@ -10,7 +10,6 @@
     <meta name="description" content="ここにウェブサイトの説明文を入力">
 
     <link rel="icon" href="画像データURL">
-    <link rel="stylesheet" type="text/css" href="css/random.css" />
     <link rel="stylesheet" type="text/css" href="css/readme.css" />
 
     <style type="text/css">
@@ -50,8 +49,6 @@
 
 <body>
     <div id="menu"></div>
-    <div id="random">
-    </div>
     
     <div id="readme">
         <div id="cv">
@@ -67,22 +64,6 @@
         $(function () {
             $("#menu").load("menu.html");
         })
-
-
-        let img = document.getElementById('random');
-        img.innerHTML = contents;
-
-        function shuffleContent(container) {
-            let content = container.find("> *");
-            let total = content.length;
-            content.each(function () {
-                content.eq(Math.floor(Math.random() * total)).prependTo(container);
-            });
-        }
-
-        $(function random() {
-            shuffleContent($("#random"));
-        });
     </script>
 </body>
 

@@ -1,8 +1,7 @@
 ityped.init(document.querySelector("#ityped"), {
     strings: [
-        'Hello こんにちは',
-        'Touch The Screen to Enter Here',
-        '画面をタッチするとコンテンツが表示されます'
+        'ここに、ityped.js に 記述したテキストが表示されます。',
+        'iTyped.js は、Luis Viniciusが制作したオープンソースコードです。'
     ],
     startDelay: 100, //アニメーション開始までの遅延、大きいほど遅れる
     typeSpeed: 100, //表示させるスピード、大きいほどゆっくり
