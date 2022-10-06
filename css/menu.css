@@ -88,7 +88,6 @@ a.tab:hover,
 
     #pc_menu {
         height: 100vh;
-        max-height: -webkit-fill-available;
         background-color: rgba(255, 255, 255, 0.5);
     }
 
