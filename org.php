@@ -34,6 +34,13 @@ fclose($fp);
     <link rel="stylesheet" type="text/css" href="css/org.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="org.js"></script>
+    <style type="text/css">
+        #pc_menu,
+        #mobile_open {
+            top: 0;
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
