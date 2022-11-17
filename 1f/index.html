@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1F | Web Template</title>
+  <script src="random.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="contents">
+    <h1>H1</h1>
+    <h2>H2<br />H2</h2>
+    <h3>H3</h3>
+    <hr />
+    <div class="text">
+      <p>div class="text"</p>
+      <div class="left">
+        div class="right" <a href="#">a href="#"</a>
+      </div>
+      <div class="right">
+        div class="right" <a href="#">a href="#"</a>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>1F | <a href="/">WWW to Print</a></p>
+      footer id="footer"
+    </footer>
+  </section>
+
+  <section class="contents">
+    <h1><i>section</i>.contents <b>h1</b></h1>
+    <p><i>section</i>.contents <b>p</b></p>
+    <hr />
+    <div class="left">
+      <h3><i>section</i>.contents div<u>.left</u> <b>h3</b></h3>
+      <p><i>section</i>.contents div<u>.left</u> <b>p</b></p>
+    </div>
+    <div class="right">
+      <h2><i>section</i>.contents div<u>.right</u> <b>h2</b></h2>
+      <p><i>section</i>.contents div<u>.right</u> <b>p</b></p>
+    </div>
+  </section>
+
+  <section class="no_print">
+    <div class="left">
+      <p class="vg">WWW to Print</p>
+      <h1>
+        <a href="javascript:void(0)" onclick="window.print();return false;">1F</a>
+      </h1>
+    </div>
+    <div class="random"></div>
+    <div id="print">
+      <p class="back">
+        <a onclick="history.back(-1);return false;">↵</a>
+      </p>
+      <p class="mobile">
+        <a href="javascript:void(0)" onclick="window.print();return false;">このページを印刷すると、 概要が表示されます。</a>
+      </p>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+
+
+@media print {
+  .contents {
+    display: block;
+  }
+
+  .no_print {
+    display: none;
+  }
+
+  .text {
+    height: 75vh;
+  }
+}

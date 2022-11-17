@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contents,
+.left,
+.right,
+#footer,
+.no_print {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #fff;
+  --main-font-family: "Arial", sans-serif;
+  --sub-font-family: "Times New Roman", serif;
+}
+
+.contents,
+.no_print {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: var(--main-font-family);
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--sub-font-family);
+}
+
+h1,
+h2,
+.right {
+  float: right;
+}
+
+h3,
+.left,
+.no_print h1 {
+  float: left;
+}
+
+hr,
+.contents,
+#footer {
+  clear: both;
+}
+
+h1,
+.back {
+  font-size: 8vw;
+  line-height: 100%;
+  margin: 0 1vw 2vw;
+}
+
+h2,
+.text {
+  font-size: 2vw;
+  line-height: 200%;
+}
+
+h3,
+.text a {
+  font-size: 4vw;
+}
+
+h1,
+h2,
+h3,
+.contents b {
+  font-weight: 400;
+}
+
+h2 {
+  margin: 0 2.5vw;
+}
+
+h3 {
+  line-height: 8vw;
+  margin: 0;
+}
+
+.contents b {
+  font-size: 125%;
+  font-weight: 400;
+  font-family: var(--main-font-family);
+}
+
+.contents i,
+.contents u {
+  font-size: 125%;
+  font-weight: 400;
+  font-family: var(--sub-font-family);
+}
+
+.contents,
+.no_print {
+  padding: 2.5vw;
+}
+
+.text {
+  height: 75vh;
+}
+
+.left,
+.right {
+  display: block;
+  position: relative;
+  width: 50%;
+}
+
+.left {
+  z-index: 2;
+  padding-right: 1.25vw;
+}
+
+.right {
+  padding-left: 1.25vw;
+}
+
+.random,
+.random img {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.random {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.random img {
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+hr {
+  border: none;
+  height: 2vw;
+}
+
+img {
+  width: 100%;
+}
+
+#footer {
+  width: 100%;
+  padding: 2.5vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#print {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+
+.contents {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .left,
+  .right {
+    width: 100%;
+    clear: both;
+    display: block;
+    padding: 0 0 4.5vw;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media print {
+  .contents {
+    display: block;
+  }
+
+  .no_print {
+    display: none;
+  }
+
+  .text {
+    height: 75vh;
+  }
+}
