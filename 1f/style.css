@@ -16,9 +16,10 @@ body {
 }
 
 :root {
-  --main-bg-color: #fff;
-  --main-font-family: "Arial", sans-serif;
-  --sub-font-family: "Times New Roman", serif;
+  --main-color: #000;
+  --sub-color: #fff;
+  --main-font: "Arial", sans-serif;
+  --sub-font: "Times New Roman", serif;
 }
 
 .contents,
@@ -27,17 +28,25 @@ body {
 }
 
 .no_print {
+  font-family: var(--main-font);
   max-height: -webkit-fill-available;
 }
 
 body {
-  background-color: var(--main-bg-color);
-  font-family: var(--main-font-family);
+  background-color: var(--sub-color);
+  font-family: var(--main-font);
 }
 
 a {
+  color: var(--main-color);
   text-decoration: none;
-  font-family: var(--sub-font-family);
+  font-family: var(--sub-font);
+}
+
+a:hover {
+  font-style: italic;
+  color: var(--sub-color);
+  background-color: var(--main-color);
 }
 
 h1,
@@ -95,14 +104,14 @@ h3 {
 .contents b {
   font-size: 125%;
   font-weight: 400;
-  font-family: var(--main-font-family);
+  font-family: var(--main-font);
 }
 
 .contents i,
 .contents u {
   font-size: 125%;
   font-weight: 400;
-  font-family: var(--sub-font-family);
+  font-family: var(--sub-font);
 }
 
 .contents,
@@ -148,6 +157,8 @@ h3 {
 
 .random img {
   position: fixed;
+  min-width: 100%;
+  min-height: 100%;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
@@ -156,10 +167,6 @@ h3 {
 hr {
   border: none;
   height: 2vw;
-}
-
-img {
-  width: 100%;
 }
 
 #footer {
