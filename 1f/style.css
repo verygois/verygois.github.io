@@ -24,6 +24,9 @@ body {
 .contents,
 .no_print {
   height: 100vh;
+}
+
+.no_print {
   max-height: -webkit-fill-available;
 }
 
