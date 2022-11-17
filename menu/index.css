@@ -1,0 +1,149 @@
+body,
+#header,
+#header h1,
+#header ul {
+    padding: 0;
+    margin: 0;
+}
+
+.open main,
+.open footer {
+  display: none;
+}
+
+#header li {
+    font-family: "Arial Narrow", "YuGothic", monospace;
+}
+
+#header .button {
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 9999;
+}
+
+#header .button b::after {
+  content: 'Menu';
+}
+
+#header .button.active b::after {
+  content: 'Close';
+}
+
+@media screen and (min-width: 750px) {
+  #header .button {
+    display: none;
+  }
+}
+
+#header a,
+#header .button {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#header a:hover,
+#header .button:hover {
+  color: blue;
+}
+
+#header {
+  font-size: 7.5vw;
+}
+
+#header .button b {
+  font-weight: 400;
+  font-size: 5.5vw;
+}
+
+#header li:first-child {
+  font-size: 10vw;
+}
+
+#header ul,
+#header li {
+  list-style: none;
+}
+
+/* ヘッダー */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  background-color: #fff;
+  transition: ease .5s;
+}
+
+.header__nav.active {
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 750px) {
+
+  #header,
+  #header .button {
+    font-size: 1rem;
+  }
+
+  #header li:first-child {
+    font-size: 150%;
+  }
+
+  .header__nav {
+    background-color: inherit;
+    transform: initial;
+    height: inherit;
+  }
+
+  #header ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: initial;
+    justify-content: space-between;
+  }
+
+  #header ul li {
+    padding: 0.5rem 1rem;
+  }
+}
+
+#header ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, -50%);
+}
+
+#header ul li {
+  padding: 0.25rem 1rem;
+}
+
+@media screen and (min-width: 750px) {
+  #header ul {
+    padding-top: inherit;
+    padding-bottom: inherit;
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translate(0, 0);
+  }
+}

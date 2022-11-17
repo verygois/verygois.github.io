@@ -1,0 +1,124 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  clear: both;
+  border: none;
+}
+
+#org .btn,
+#org a .date,
+#org a .title,
+#org a span {
+  font-family: "Arial Narrow", "YuGothic", monospace;
+}
+
+#org {
+  width: 100%;
+  margin: 3rem auto 0;
+  overflow-x: hidden;
+  border-bottom: #000 solid 1px;
+}
+
+#org input[type="radio"] {
+  display: none;
+}
+
+#org .btn {
+  display: inline-block;
+  background-color: #fff;
+  text-transform: capitalize;
+  text-shadow: 0.1rem 0.1rem #fff;
+  margin: 0.25rem 0 0.5rem 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  color: #000;
+  border-radius: 0.5rem;
+  transition: 1.5s all;
+}
+
+#org .btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #eee;
+  text-shadow: 0.1rem 0.1rem #000;
+  transition: .5s all;
+}
+
+#org input[type="radio"]:checked+.btn {
+  color: #fff;
+  background-color: #eee;
+  text-shadow: 0.1rem 0.1rem #000;
+}
+
+#org a .date,
+#org a .title,
+#org a span {
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+#org a {
+  font-size: 1rem;
+  color: #000;
+  clear: both;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  transition: 1.5s all;
+}
+
+#org a p {
+  color: #000;
+  padding: 0;
+  margin: 0;
+  border-top: #000 solid 1px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: space-between;
+  transition: 1.5s all;
+}
+
+#org a:hover p {
+  color: #fff;
+  background-color: #eee;
+  text-shadow: 0.1rem 0.1rem #000;
+  transition: .5s all;
+}
+
+#org a .date {
+  flex: 0 0 10rem;
+  text-decoration: none;
+}
+
+#org a .title {
+  font-size: 125%;
+  flex: 1 1 33.33%;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+#org a span {
+  font-size: 75%;
+  flex: 0 0 auto;
+  font-size: 90%;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 550px) {
+    #org a .date {
+        flex: 0 0 25%;
+    }
+
+    #org a .title {
+      flex: 1 1 70%;
+    }
+
+    #org a span {
+        flex: 1 1 100%;
+    }
+}

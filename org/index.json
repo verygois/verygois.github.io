@@ -1,0 +1,63 @@
+{
+  "title" : "ORG β",
+  "author" : "Very Gois",
+  "description" : "Webtemplate",
+  "org" : [
+    {
+      "date" : "HTML",
+      "name" : "HTMLの基本",
+      "about" : "HTML | HyperText Markup Language",
+      "url" : "https://creative-community.space/coding/html/",
+      "class" : "html"
+    },
+    {
+      "date" : "HTML",
+      "name" : "HEADって何？",
+      "about" : "HEAD | HyperText Markup Language",
+      "url" : "https://creative-community.space/coding/html/head/",
+      "class" : "html"
+    },
+    {
+      "date" : "HTML",
+      "name" : "代表的なテキスト要素",
+      "about" : "Text | HyperText Markup Language",
+      "url" : "https://creative-community.space/coding/html/text/",
+      "class" : "html"
+    },
+    {
+      "date" : "HTML",
+      "name" : "A要素とCLASS・ID属性",
+      "about" : "A CLASS ID | HyperText Markup Language",
+      "url" : "https://creative-community.space/coding/html/href/",
+      "class" : "html"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSSの基本",
+      "about" : "CSS | Cascading Style Sheets",
+      "url" : "https://creative-community.space/coding/css/",
+      "class" : "css"
+    },
+    {
+      "date" : "CSS",
+      "name" : "テキスト要素の書体をスタイリングする",
+      "about" : "Font | Cascading Style Sheets",
+      "url" : "https://creative-community.space/coding/css/font/",
+      "class" : "css"
+    },
+    {
+      "date" : "CSS",
+      "name" : "文字色・背景色をスタイリングする",
+      "about" : "Color | Cascading Style Sheets",
+      "url" : "https://creative-community.space/coding/css/color/",
+      "class" : "css"
+    },
+    {
+      "date" : "___",
+      "name" : "___",
+      "about" : "___",
+      "url" : "___",
+      "class" : "___"
+    }
+  ]
+}
