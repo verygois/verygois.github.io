@@ -1,3 +1,7 @@
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -20,6 +24,7 @@ body {
 .contents,
 .no_print {
   height: 100vh;
+  max-height: -webkit-fill-available;
 }
 
 body {
