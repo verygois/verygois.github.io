@@ -71,7 +71,6 @@ h1,
 .back {
   font-size: 8vw;
   line-height: 100%;
-  margin: 0 1vw 2vw;
 }
 
 h2,
@@ -90,6 +89,10 @@ h2,
 h3,
 .contents b {
   font-weight: 400;
+}
+
+h1 {
+  margin: 0 1vw 2vw;
 }
 
 h2 {
