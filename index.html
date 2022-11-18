@@ -2,49 +2,49 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
 
-    <title>ここにウェブサイトのタイトルを入力</title>
-    <meta name="description" content="ここにウェブサイトの説明文を入力">
+  <link rel="icon" href="画像データURL">
+  <link rel="apple-touch-icon" href="画像データURL">
 
-    <link rel="icon" href="画像データURL">
-    <link rel="apple-touch-icon" href="画像データURL">
+  <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" type="text/css" href="screensaver.css" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Sans+Condensed:ital,wght@0,300;0,400;1,400&display=swap"
-        rel="stylesheet">
-
-    <style type="text/css">
-        #cover {
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 50;
-        }
-    </style>
-
+  <style type="text/css">
+    #html:checked~a:not(.html),
+    #css:checked~a:not(.css),
+    #js:checked~a:not(.js),
+    #etc:checked~a:not(.etc) {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
-    <header id="header"></header>
+  <header id="header"></header>
+  <main>
+    <form id="org">
+      <input id="all" type="radio" name="btn" checked>
+      <label class="btn" for="all">How to Coding</label>
+      <input id="html" type="radio" name="btn">
+      <label class="btn" for="html">HTML</label>
+      <input id="css" type="radio" name="btn">
+      <label class="btn" for="css">CSS</label>
+      <input id="js" type="radio" name="btn">
+      <label class="btn" for="js">JavaScript</label>
+      <input id="etc" type="radio" name="btn">
+      <label class="btn" for="etc">Etc,</label>
+    </form>
+  </main>
 
-    <main id="cover">
-        <h1 class="screensaver">vg.pe.hu</h1>
-    </main>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="screensaver.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#header").load("menu/index.html");
-        })
-    </script>
+  <script src="script.js"></script>
+  <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#header").load("/menu/index.html");
+    })
+  </script>
 </body>
 
 </html>
