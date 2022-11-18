@@ -26,5 +26,5 @@ function sentenceGenerator() {
 }
 window.setInterval(function () {
   sentenceGenerator();
-}, 1000);
+}, 2000);
 sentenceGenerator();
