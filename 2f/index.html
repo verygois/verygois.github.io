@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>___</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  :root {
+    --main-text: #000;
+    --main-color: white;
+    --sub-color: black;
+  }
+
+  #main img {
+    max-height: 95%;
+    max-width: 95%;
+  }
+
+  #info {
+    columns: 300px auto;
+  }
+
+  @media screen and (max-width: 750px) {
+    #info {
+      columns: 2;
+    }
+  }
+  </style>
+</head>
+<body>
+  <main id="main">
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <hr/>
+    <h3><b>[H3 B]</b> h3</h3>
+    <hr/>
+    <p class="name">
+      <b>p class="name" b</b> p class="name"
+    </p>
+    <hr/>
+    <div class="text">
+      <p>div class="text" p</p>
+    </div>
+    <div class="images">
+      <img src="#" alt="div.images img">
+    </div>
+    <h1><a href="#">h1 a</a></h1>
+  </main>
+
+  <section id="info">
+    <div class="more">
+      <p>section id="info"</p>
+      <u>section#info div.more u</u>
+      <p><img src="#" alt="section#info img"></p>
+    </div>
+    <div class="text">
+      <p>section#info div.text p</p>
+      <hr/>
+      <h4>H4</h4>
+      <h1 class="back">
+        <a onclick="history.back(-1);return false;">↵</a>
+      </h1>
+    </div>
+  </section>
+</body>
+</html>

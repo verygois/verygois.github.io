@@ -1,0 +1,183 @@
+html {
+    height: -webkit-fill-available;
+}
+
+body,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "MS Mincho", serif;
+  src: url("https://vg.pe.hu/jp/MSMincho.ttf");
+}
+
+body {
+  font-family: "MS Mincho", "SimSong", serif;
+  color: var(--main-text);
+  background-color: var(--main-color);
+}
+
+a {
+  color: var(--sub-color);
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--sub-color);
+  color: var(--main-color);
+  font-style:oblique;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  letter-spacing: 0.05rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2,
+h3,
+#main .text p {
+  font-size: 1rem;
+  line-height: 200%;
+}
+
+h3 b,
+#main .text b {
+  font-size: 1.5rem;
+}
+
+#main .name b {
+  font-size: 2.5rem;
+  line-height: 150%;
+  font-weight: normal;
+}
+
+h1 {
+  float: right;
+}
+
+h2 {
+  float: left;
+}
+
+h3,
+hr,
+#main .text,
+#info {
+  clear: both;
+}
+
+h4 {
+  text-align: center;
+}
+
+hr {
+  border: none;
+  height: 0.5rem;
+}
+
+#main {
+  box-sizing: border-box;
+  padding: 4.5vw;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+#main .text {
+  margin-bottom: 2rem;
+}
+
+#main .text p {
+  letter-spacing: 0.1rem;
+}
+
+#main .images {
+  position: absolute;
+  bottom: 4.5vw;
+  z-index: -1;
+}
+
+.back {
+  position: absolute;
+  bottom: 4.5vw;
+  right: 4.5vw;
+}
+
+#info {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 1rem;
+  font-size: 1rem;
+  column-fill: auto;
+  break-inside: avoid-page;
+  background-color: var(--main-color);
+}
+
+#info .more,
+#info .text {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+#info .more {
+  break-inside: avoid;
+  font-size: 0.9rem;
+}
+
+#info .text {
+  column-span: all;
+}
+
+#info img {
+  width: 100%
+}
+
+@media screen and (max-width: 750px) {
+  h1,
+  h2,
+  h3 {
+    letter-spacing: 0.1vw;
+  }
+
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  h2,
+  h3,
+  #main .text p {
+    font-size: 2.5vw;
+  }
+
+  h3 b,
+  #main .text b {
+    font-size: 3vw;
+  }
+
+  #main .name b {
+    font-size: 5vw;
+  }
+
+  #main .text {
+    margin-bottom: 4.5vw;
+  }
+
+  #main .text p {
+    letter-spacing: 0.25vw;
+  }
+}
