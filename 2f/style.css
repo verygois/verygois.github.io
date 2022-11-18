@@ -22,12 +22,12 @@ body {
 }
 
 a {
-  color: var(--sub-color);
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:hover {
-  background-color: var(--sub-color);
+  background-color: var(--link-color);
   color: var(--main-color);
   font-style:oblique;
 }
