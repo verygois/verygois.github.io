@@ -2,8 +2,8 @@ body,
 #header,
 #header h1,
 #header ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .open main,
@@ -12,7 +12,8 @@ body,
 }
 
 #header li {
-    font-family: "Arial Narrow", "YuGothic", monospace;
+  font-family: "Arial Narrow", "YuGothic", monospace;
+  word-break: break-all;
 }
 
 #header .button {
