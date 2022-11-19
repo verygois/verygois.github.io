@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="style.css" />
   <style>
   :root {
+    --main-font: "Arial", sans-serif;
+    --sub-font: "Times New Roman", serif;
     --main-text: #000;
     --main-color: white;
     --link-color: black;
@@ -33,36 +35,57 @@
 </head>
 <body>
   <main id="main">
-    <h1>2F</h1>
-    <h2>1.17 - 8.31.2019</h2>
+    <h1>H1</h1>
+    <h2>H2</h2>
     <hr/>
-    <h3><b>∧°┐</b> | creative, community space</h3>
+    <h3><b>H3 B</b> H3</h3>
     <hr/>
     <p class="name">
-      <b>[Web Template]</b> for
+      <b>#main .name B</b> p class="name"
     </p>
     <hr/>
     <div class="text">
-      <p>___</p>
+      #main .text
+      <p>#main .text P <b>#main .text B</b></p>
     </div>
-    <div class="images random"></div>
-    <h1><a href="https://vg.pe.hu/2f/">vg.pe.hu/2f/</a></h1>
+    <div class="images">
+      #main .images
+      <img src="#" alt="#main img">
+      #main img {
+        max-height: 55vh;
+        max-width: 95%;
+      }
+    </div>
+    <h1>H1 <a href="#">A</a></h1>
   </main>
 
   <section id="info">
+    #INFO {
+      columns: 300px auto;
+    }
     <div class="more">
-      <p>____</p>
-      <u>____</u>
-      <p><img src="#" alt="section#info img"></p>
+      #info .MORE
+      <p>{
+        break-inside: avoid;
+        font-size: 0.9rem;
+      }</p>
     </div>
     <div class="text">
-      <p>____</p>
+      #info .TEXT
+      <p>{
+        column-span: all;
+      }</p>
       <hr/>
-      <h4>____</h4>
+      <h4>H4</h4>
       <h1 class="back">
         <a onclick="history.back(-1);return false;">↵</a>
       </h1>
     </div>
+    @media screen and (max-width: 750px) {
+      #info {
+        columns: 2;
+      }
+    }
   </section>
   <script src="random.js" defer></script>
 </body>
