@@ -5,59 +5,101 @@
   "org" : [
     {
       "date" : "HTML",
-      "name" : "HTMLの基本",
-      "about" : "HTML | HyperText Markup Language",
-      "url" : "https://creative-community.space/coding/html/",
+      "name" : "index.html",
+      "about" : "verygois.github.io",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/index.html",
       "class" : "html"
     },
     {
-      "date" : "HTML",
-      "name" : "HEADって何？",
-      "about" : "HEAD | HyperText Markup Language",
-      "url" : "https://creative-community.space/coding/html/head/",
-      "class" : "html"
+      "date" : "JSON",
+      "name" : "index.json",
+      "about" : "verygois.github.io/index.json",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/index.json",
+      "class" : "etc"
     },
     {
-      "date" : "HTML",
-      "name" : "代表的なテキスト要素",
-      "about" : "Text | HyperText Markup Language",
-      "url" : "https://creative-community.space/coding/html/text/",
-      "class" : "html"
-    },
-    {
-      "date" : "HTML",
-      "name" : "A要素とCLASS・ID属性",
-      "about" : "A CLASS ID | HyperText Markup Language",
-      "url" : "https://creative-community.space/coding/html/href/",
-      "class" : "html"
+      "date" : "JavaScript",
+      "name" : "script.js",
+      "about" : "verygois.github.io/script.js",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/script.js",
+      "class" : "js"
     },
     {
       "date" : "CSS",
-      "name" : "CSSの基本",
-      "about" : "CSS | Cascading Style Sheets",
-      "url" : "https://creative-community.space/coding/css/",
+      "name" : "style.css",
+      "about" : "verygois.github.io/style.css",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/style.css",
       "class" : "css"
     },
     {
       "date" : "CSS",
-      "name" : "テキスト要素の書体をスタイリングする",
-      "about" : "Font | Cascading Style Sheets",
-      "url" : "https://creative-community.space/coding/css/font/",
+      "name" : "/menu/index.css",
+      "about" : "verygois.github.io/menu/index.css",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/menu/index.css",
       "class" : "css"
+    },
+    {
+      "date" : "HTML",
+      "name" : "/menu/index.html",
+      "about" : "verygois.github.io/menu/index.html",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/menu/index.html",
+      "class" : "html"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "/menu/index.js",
+      "about" : "verygois.github.io/menu/index.js",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/menu/index.js",
+      "class" : "js"
+    },
+    {
+      "date" : "HTML",
+      "name" : "/1f/index.html",
+      "about" : "verygois.github.io/1f/index.html",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/1f/index.html",
+      "class" : "html"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "/1f/random.js",
+      "about" : "verygois.github.io/1f/random.js",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/1f/random.js",
+      "class" : "js"
     },
     {
       "date" : "CSS",
-      "name" : "文字色・背景色をスタイリングする",
-      "about" : "Color | Cascading Style Sheets",
-      "url" : "https://creative-community.space/coding/css/color/",
+      "name" : "/1f/style.css",
+      "about" : "verygois.github.io/1f/style.css",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/1f/style.css",
       "class" : "css"
     },
     {
-      "date" : "___",
-      "name" : "___",
-      "about" : "___",
-      "url" : "___",
-      "class" : "___"
+      "date" : "HTML",
+      "name" : "/2f/index.html",
+      "about" : "verygois.github.io/2f/index.html",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/2f/index.html",
+      "class" : "html"
+    },
+    {
+      "date" : "CSS",
+      "name" : "/2f/style.css",
+      "about" : "verygois.github.io/2f/style.css",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/2f/style.css",
+      "class" : "css"
+    },
+    {
+      "date" : "ZIP",
+      "name" : "mousedragscrollable.zip",
+      "about" : "verygois.github.io/mousedragscrollable/",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/18d4c3ab7c7f8233d76e563c60a97df8c0bf7708/mousedragscrollable/mousedragscrollable.zip",
+      "class" : "etc"
+    },
+    {
+      "date" : "ZIP",
+      "name" : "rotate-scale-transform.zip",
+      "about" : "verygois.github.io/rotate-scale-transform/",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/18d4c3ab7c7f8233d76e563c60a97df8c0bf7708/rotate-scale-transform/rotate-scale-transform.zip",
+      "class" : "etc"
     }
   ]
 }
