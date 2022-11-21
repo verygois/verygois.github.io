@@ -200,6 +200,10 @@ hr {
     padding: 0 0 4.5vw;
   }
 
+  .random img {
+    max-height: 100%;
+  }
+
   .mobile {
     display: none;
   }
