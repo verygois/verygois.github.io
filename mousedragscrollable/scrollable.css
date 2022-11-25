@@ -32,7 +32,8 @@ body,
 .mousedragscrollable li {
   background-position: center;
   background-repeat: no-repeat;
-  width: 750px;
+  width: 90%;
+  max-width: 750px;
   height: 99%;
   overflow: auto;
   position: relative;
