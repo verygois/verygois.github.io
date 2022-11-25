@@ -92,6 +92,11 @@ h3,
   font-weight: 400;
 }
 
+.contents,
+.no_print {
+  padding: 2.5vw;
+}
+
 h1 {
   padding: 0 1vw 2vw;
 }
@@ -117,11 +122,6 @@ h3 {
   font-family: var(--sub-font);
 }
 
-.contents,
-.no_print {
-  padding: 2.5vw;
-}
-
 .text {
   height: 75vh;
 }
@@ -141,13 +141,16 @@ h3 {
 }
 
 .random {
+  pointer-events: none;
+  user-select: none;
   position: absolute;
-  width: 100%;
-  height: 100vh;
-  max-height: -webkit-fill-available;
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+  z-index: -1;
 }
 
 .random img {
