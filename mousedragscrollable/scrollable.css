@@ -33,7 +33,6 @@ body,
   background-position: center;
   background-repeat: no-repeat;
   width: 750px;
-  max-width: 90vw;
   height: 90%;
   overflow: auto;
   position: relative;
