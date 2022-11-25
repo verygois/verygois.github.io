@@ -6,8 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no">
   <title>1F | Web Template</title>
-
   <link rel="stylesheet" href="style.css" />
+  <style>
+  :root {
+    --main-color: #000;
+    --sub-color: #fff;
+    --main-font: "MS Mincho", "SimSong", serif;
+    --sub-font: "MS Mincho", "SimSong", serif;
+  }
+  </style>
 </head>
 
 <body>
@@ -54,9 +61,7 @@
     </div>
     <div class="random"></div>
     <div id="print">
-      <p class="back">
-        <a onclick="history.back(-1);return false;">↵</a>
-      </p>
+      <a class="back" onclick="history.back(-1);return false;">↵</a>
       <p class="mobile">
         <a href="javascript:void(0)" onclick="window.print();return false;">このページを印刷すると、 概要が表示されます。</a>
       </p>

@@ -32,13 +32,6 @@
       "class" : "css"
     },
     {
-      "date" : "CSS",
-      "name" : "/menu/index.css",
-      "about" : "verygois.github.io/menu/index.css",
-      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/menu/index.css",
-      "class" : "css"
-    },
-    {
       "date" : "HTML",
       "name" : "/menu/index.html",
       "about" : "verygois.github.io/menu/index.html",
@@ -46,10 +39,17 @@
       "class" : "html"
     },
     {
+      "date" : "CSS",
+      "name" : "/menu/style.css",
+      "about" : "verygois.github.io/menu/style.css",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/menu/style.css",
+      "class" : "css"
+    },
+    {
       "date" : "JavaScript",
-      "name" : "/menu/index.js",
-      "about" : "verygois.github.io/menu/index.js",
-      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/menu/index.js",
+      "name" : "/menu/script.js",
+      "about" : "verygois.github.io/menu/script.js",
+      "url" : "https://github.com/verygois/verygois.github.io/blob/f9166fdaf71efadec8fe6290e75d4d46064e98c9/menu/script.js",
       "class" : "js"
     },
     {

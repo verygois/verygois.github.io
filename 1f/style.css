@@ -2,34 +2,32 @@ html {
   height: -webkit-fill-available;
 }
 
-body {
+body,
+.random,
+.random img {
   margin: 0;
   padding: 0;
 }
 
+h1,
+h2,
+h3,
 .contents,
+.text,
 .left,
 .right,
-#footer,
-.no_print {
+.no_print,
+#footer {
   box-sizing: border-box;
+  margin: 0
 }
 
-:root {
-  --main-color: #000;
-  --sub-color: #fff;
-  --main-font: "Arial", sans-serif;
-  --sub-font: "Times New Roman", serif;
-}
-
-.contents,
-.no_print {
+.contents {
   height: 100vh;
 }
 
 .no_print {
   font-family: var(--main-font);
-  max-height: -webkit-fill-available;
 }
 
 body {
@@ -52,12 +50,14 @@ a:hover {
 h1,
 h2,
 .right {
+  display: block;
   float: right;
 }
 
 h3,
 .left,
 .no_print h1 {
+  display: block;
   float: left;
 }
 
@@ -92,16 +92,16 @@ h3,
 }
 
 h1 {
-  margin: 0 1vw 2vw;
+  padding: 0 1vw 2vw;
 }
 
 h2 {
-  margin: 0 2.5vw;
+  padding: 0 2.5vw;
 }
 
 h3 {
   line-height: 8vw;
-  margin: 0;
+  padding: 0 2.5vw 0 0;
 }
 
 .contents b {
@@ -127,13 +127,11 @@ h3 {
 
 .left,
 .right {
-  display: block;
   position: relative;
   width: 50%;
 }
 
 .left {
-  z-index: 2;
   padding-right: 1.25vw;
 }
 
@@ -141,17 +139,11 @@ h3 {
   padding-left: 1.25vw;
 }
 
-.random,
-.random img {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
 .random {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
   bottom: 0;
   left: 0;
   right: 0;
@@ -182,8 +174,20 @@ hr {
 
 #print {
   position: fixed;
+  left: 0;
   bottom: 0;
   z-index: 100;
+}
+
+#print a {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+#print p {
+  padding: 0;
+  margin: 0;
 }
 
 .contents {
@@ -193,10 +197,10 @@ hr {
 @media screen and (max-width: 750px) {
   .left,
   .right {
-    width: 100%;
     clear: both;
     display: block;
-    padding: 0 0 4.5vw;
+    padding: 0 0 4vw;
+    width: 100%;
   }
 
   .random img {
@@ -213,6 +217,7 @@ hr {
     display: block;
   }
 
+  #print,
   .no_print {
     display: none;
   }
