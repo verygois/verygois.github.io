@@ -1,3 +1,9 @@
+---
+layout: page
+title: How to Coding
+permalink: /howto/
+---
+
 # *How to* Create a **Website** by [GitHub Pages](https://pages.github.com/)
 
 **[はじめに](https://docs.github.com/ja/get-started/quickstart/hello-world)**
@@ -31,7 +37,7 @@ gem install jekyll bundler
 新しいJekyllサイトを作成
 ```
 jekyll new サイト名
-cd myblog
+cd サイト名
 bundle exec jekyll serve
 ```
 
