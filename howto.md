@@ -4,18 +4,9 @@ title: How to Coding
 permalink: /howto/
 ---
 
-# *How to* Create a **Website** by [GitHub Pages](https://pages.github.com/)
+# *How to* Create a **Website** by [Jekyll](https://jekyllrb-ja.github.io/)
 
-**[はじめに](https://docs.github.com/ja/get-started/quickstart/hello-world)**
-
-* *username*.github.io という名前の [新しいパブリック リポジトリ](https://github.com/new) を作成
-* [GitHub デスクトップをダウンロード](https://desktop.github.com/) し、リポジトリのクローンを作成
-* インデックスファイルを作成し、コミットして公開する
-* **完了**
-
-***
-
-## [Jekyll](https://jekyllrb-ja.github.io/) • シンプルで、ブログのような、静的サイト
+シンプルで、ブログのような、静的サイト
 * Ruby開発環境をインストール(バージョン確認)
 * GCCとMakeをインストール(バージョン確認)
 * Jekyllとbundler gemsをインストール
@@ -34,7 +25,7 @@ gem install bundler
 gem install jekyll bundler
 ```
 
-新しいJekyllサイトを作成
+## 新しいJekyllサイトを作成
 ```
 jekyll new サイト名
 cd サイト名
